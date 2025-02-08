@@ -16,3 +16,13 @@
         padding: 0 1em 0 1em;
     }
 }
+
+@media screen and (max-width: 270px) {
+    .tecnologias {
+        padding: 0 0.5em 0 0.5em;
+    }
+
+    .tecnologias__icone {
+        width: 15%;
+    }
+}

@@ -61,3 +61,25 @@
     }
 
 }
+
+@media screen and (max-width: 270px) {
+    .sobre {
+        padding: 4rem 2rem 0 0.5rem;
+    }
+
+    .sobremim {
+        flex-direction: column-reverse;
+        padding: 5em 1em 0 1em;
+    }
+
+    .sobremim__apresentacao-imagem {
+        display: flex;
+        justify-content: center;
+        margin: 2em 0 3em 0;
+    }
+
+    .sobremim__apresentacao-img {
+        width: 70%;
+    }
+
+}
