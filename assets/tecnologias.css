@@ -1,0 +1,18 @@
+.tecnologias {
+    margin-top: 1.85em;
+    padding: 0 7em 0 7em ;
+    color: var(--cor-terciaria);
+    font-weight: 500;
+}
+
+@media screen and (max-width: 1024px) {
+    .tecnologias {
+        padding: 0 5em 0 5em;
+    }
+}
+
+@media screen and (max-width: 430px) {
+    .tecnologias {
+        padding: 0 1em 0 1em;
+    }
+}

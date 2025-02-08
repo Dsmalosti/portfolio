@@ -1,0 +1,42 @@
+@import url(reset.css);
+@import url(header.css);
+@import url(sobre.css);
+@import url(projetos.css);
+@import url(rodape.css);
+@import url(tecnologias.css);
+@import url(curriculo.css);
+@import url('https://fonts.googleapis.com/css2?family=Hind:wght@400;500;700&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+
+:root {
+    --cor-principal: #ffffff;
+    --cor-secundaria: #012E40;
+    --azul: #A9D9D0;
+    --cor-terciaria: #F2A71B;
+    --vermelho: #D90404;
+    --cor-titulo: #262521;
+    --light: #cccccc;
+    --dark: #151515;
+    --fonte-principal: "Hind", serif;
+}
+
+body {
+    background-color: var(--cor-titulo);
+    color: var(--cor-principal);
+    font-family: var(--fonte-principal);
+    font-size: 20px;
+    font-weight: 400;
+}
+
+@media screen and (max-width: 1024px) {
+    body {
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 430px) {
+    body {
+        font-size: 15px;
+    }
+}
+
+

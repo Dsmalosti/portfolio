@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/style.css">
+    <title>Sobre mim</title>
+</head>
+<body>
+    <header class="cabecalho">
+        <ul>
+            <li><h1 class="cabecalho__titulo"><a href="index.html" class="cabecalho__titulo-link">Diogo Malosti</a></h1></li>
+            <li><h2 class="cabecalho__subtitulo">Desenvolvedor full-stack</h2></li>
+        </ul>
+        <div class="cabecalho__link-container">
+            <a href="sobreMim.html" class="cabecalho__link">Sobre mim</a>
+            <a href="curriculo.html" class="cabecalho__link">Curriculo</a>
+        </div>
+    </header>
+
+    <div class="theme-switcher-area">
+        <label for="theme-switcher" class="theme-switcher-button">
+        </label>
+    </div>
+
+    <main class="sobremim">
+        <section class="sobremim__apresentacao-conteudo">
+            <h1 class="sobremim__apresentacao-titulo">Sobre mim</h1>
+            <p class="sobremim__apresentacao-texto">Meu nome é Diogo Malosti e sou estudante de Análise e Desenvolvimento de Sistemas na Universidade de Taubaté. Meu interesse por tecnologia começou cedo e me levou a iniciar meus estudos em programação no curso técnico de Informática do Senac, onde obtive minha formação.</p>
+            <hr class="sobremim__apresentacao-hr">
+
+            <p class="sobremim__apresentacao-texto">Tenho uma paixão enorme por programação e tecnologia. No momento, estou me dedicando ao aprendizado de Python, uma linguagem poderosa e versátil, e ao Desenvolvimento Web, um campo em constante crescimento e repleto de oportunidades. Minha jornada de aprendizagem é contínua e estou sempre buscando novas maneiras de aprimorar minhas habilidades e conhecimentos.</p>
+            <hr class="sobremim__apresentacao-hr">
+                
+            <p class="sobremim__apresentacao-texto"></p>Estou atualmente em busca de uma oportunidade de estágio na área de programação e desenvolvimento de software. Acredito que um estágio me permitirá aplicar meus conhecimentos de maneira prática, solucionar problemas reais e colaborar com profissionais experientes. Além disso, vejo o estágio como uma chance valiosa para aprender novas tecnologias e metodologias, desenvolver minhas capacidades de trabalho em equipe e comunicação, e crescer profissionalmente.</p>
+            
+        </section>
+        <section class="sobremim__apresentacao-imagem">
+            <img class="sobremim__apresentacao-img" src="imgs/imgportifolio.png" alt="Imagem Diogo">
+        </section>
+    </main>
+
+    <footer class="rodape">
+        <div class="rodape__contato">
+            <h4 class="rodape__contato-titulo">Redes sociais</h4>
+            <ul>
+                <a href="https://github.com/Dsmalosti" class="rodape__contato-lin"><img src="imgs/github.png" alt="Icone GitHub"></a>
+                    <a href="https://www.linkedin.com/in/diogo-malosti-1941971b3?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" class="rodape__contato-lin"><img src="imgs/linkedin.png" alt="Icone Linkedin"></a>
+                    <a href="https://www.instagram.com/diogo_malosti/profilecard/?igsh=a3FtOW44cDM1djU0" class="rodape__contato-lin"><img src="imgs/instagram.png" alt="Icone Instagram"></a>
+               </li>
+            </ul>
+            <h4 class="rodape__contato-titulo-cont">Contatos</h4>
+            <ul>
+               <li class="rodape__contato-primeiraLista">
+                    <a href="#" class="rodape__contato-link-titulo">Email: dsmalosti@gmail.com</a>
+                    <a class="copyText" class="teste" href="dsmalosti@gmail.com"> Copiar </a>
+                    <div id="notification" class="notification"></div>
+                 </li>
+                 <li class="rodape__contato-segundaLista">
+                    <a href="#" class="rodape__contato-link-titulo">Número: (12) 98891-7138</a>
+                    <a class="copyText" href="(12) 98891-7138" style="margin-left: 35px;"> Copiar </a>
+                    <div id="notification" class="notification"></div>
+                 </li>
+             </ul>
+        </div>
+        <div class="rodape__data">
+            <p class="rodape__data-texto">Última atualização 08/02/2025</p>
+        </div>
+    </footer>
+    
+    <script>
+        function mensagemRetorno(mensagem) {
+            var notification = document.getElementById('notification');
+            notification.innerText = mensagem;
+            notification.style.display = 'block';
+            
+            setTimeout(function() {
+                notification.style.display = 'none';
+            }, 5000);
+        };
+    
+        // Selecionar todos os elementos com a classe 'copyText'
+        const elements = document.querySelectorAll('.copyText');
+    
+        // Adicionar evento de clique para cada elemento
+        elements.forEach(element => {
+            element.addEventListener('click', function(event) {
+                // Prevenir o comportamento padrão do clique
+                event.preventDefault();
+    
+                // Obtém o valor do atributo 'href' do elemento clicado
+                const textoParaCopiar = element.getAttribute('href');
+    
+                if (textoParaCopiar) {
+                    navigator.clipboard.writeText(textoParaCopiar).then(() => {
+                        mensagemRetorno("Texto copiado com sucesso!");
+                    }).catch(err => {
+                        mensagemRetorno("Falha ao copiar o texto. Por favor, copie manualmente.");
+                    });
+                } else {
+                    mensagemRetorno("Nenhum texto disponível para copiar.");
+                }
+            });
+        });
+    </script>
+</body>
+</html>
