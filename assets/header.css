@@ -62,3 +62,14 @@
         color: var(--cor-principal);
     }
 }
+
+@media screen and (max-width: 150px) {
+    .cabecalho {
+        padding: 0.43em 0.2 0.43em 0.2;
+        gap: 10%;
+    }
+
+    .cabecalho__titulo {
+        font-size: 10px;
+    }
+}

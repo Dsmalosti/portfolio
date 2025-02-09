@@ -98,6 +98,10 @@
     color: var(--cor-titulo);
 }
 
+.secao__tecnologias {
+    display: flex;
+}
+
 .secao5__card-botao {
     background: var(--cor-terciaria);
     padding: 0.62em;
@@ -189,3 +193,14 @@
         width: calc(80% / 1 - 3.75em);
     }
 }
+
+@media screen and (max-width: 150px) {
+
+    .secao4-div-card {
+        width: calc(80% / 1 - 1em);
+    }
+    .secao5-div-card {
+        width: calc(80% / 1 - 1em);
+    }
+}
+

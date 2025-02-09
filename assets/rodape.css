@@ -106,3 +106,23 @@
     }
 
 }
+
+@media screen and (max-width: 150px) {
+    .rodape { 
+        margin-top: 3em;
+        padding: 0 0.2em 0 0.2em ;
+    }
+
+    .copyText {
+        margin-left: 5.5em;
+    }
+
+    .rodape__data-texto {
+        margin: 25em 0 1.25em 0;
+    
+    }
+
+    .rodape__contato-lin-img {
+        width: 20%;
+    }
+}
