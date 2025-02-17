@@ -5,24 +5,11 @@
     font-weight: 500;
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (min-width: 1024px) {
     .tecnologias {
-        padding: 0 5em 0 5em;
-    }
-}
-
-@media screen and (max-width: 430px) {
-    .tecnologias {
-        padding: 0 1em 0 1em;
-    }
-}
-
-@media screen and (max-width: 270px) {
-    .tecnologias {
-        padding: 0 0.5em 0 0.5em;
+        margin-top: 1.85em;
+        padding: 0 4.5em 0 4.5em ;
+        font-weight: 500;
     }
 
-    .tecnologias__icone {
-        width: 15%;
-    }
 }
