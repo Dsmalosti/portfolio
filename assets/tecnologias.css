@@ -1,8 +1,24 @@
 .tecnologias {
     margin-top: 1.85em;
-    padding: 0 7em 0 7em ;
+    padding: 0.43em 0em 0.43em 0.5em;
     color: var(--cor-terciaria);
     font-weight: 500;
+}
+
+.tecnologias__icone {
+    width: 10%;
+}
+
+@media screen and (min-width: 450px) {
+    .tecnologias {
+        padding: 0.43em 0em 0.43em 2em;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .tecnologias__icone {
+        width: 5%;
+    }
 }
 
 @media screen and (min-width: 1024px) {
