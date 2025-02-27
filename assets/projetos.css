@@ -96,6 +96,23 @@
 
 .secao__tecnologias {
     display: flex;
+    justify-content: center;
+    margin-top: 1em;
+}
+
+.tecnologias__icone-sobre {
+    width: 30%;
+    
+}
+.secao__tecnologias-4 {
+    display: flex;
+    justify-content: center;
+    margin-top: 1em;
+}
+
+.tecnologias__icone-sobre-4 {
+    width: 60%;
+    
 }
 
 .secao5__card-botao {
@@ -216,9 +233,6 @@
         margin: 1.87em 0;
     }
     
-    .secao__tecnologias {
-        display: flex;
-    }
     
     .secao5__card-botao {
         padding: 0.62em;
