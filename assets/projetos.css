@@ -110,9 +110,13 @@
     margin-top: 1em;
 }
 
-.tecnologias__icone-sobre-4 {
+.tecnologias__icone-sobre-4a {
     width: 60%;
-    
+}
+
+
+.tecnologias__icone-sobre-4c {
+    width: 15%;
 }
 
 .secao5__card-botao {
